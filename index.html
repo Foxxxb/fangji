@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录 - 方剂工具</title>
+    <script type="module" src="/src/login.ts" defer></script>
+    <script>
+      // 路由监听
+      window.addEventListener('hashchange', function() {
+        if (window.location.hash === '#/show') {
+          window.location.href = 'show.html';
+        }
+      });
+      
+      // 初始加载时检查hash
+      if (window.location.hash === '#/show') {
+        window.location.href = 'show.html';
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="auth-container">
+      <div class="auth-box">
+        <h2>请确保阅读以下声明</h2>
+<!--        <input type="password" id="auth-input" placeholder="请输入卡密..." />-->
+          <H3>声明</H3><br>
+          <H4>所有数据均来自互联网，本软件仅为数据解析工具</H4><br>
+          <H4>使用本软件所造成的一切法律后果自行承担，本软件不承担任何法律责任</H4><br>
+          <H4>使用本软件代表您已阅读并同意以上声明</H4><br>
+<!--        <button id="auth-submit">我已阅读并同意以上声明</button>-->
+<!--        <p id="auth-error" class="auth-error"></p>-->
+      </div>
+    </div>
+    <div style="position: fixed; bottom: 10px; width: 100%; text-align: center; font-size: 12px; color: #666;">
+      吾爱破解 kls404 制作<br>
+      by www.52pojie.cn kls404<br>
+    </div>
+  </body>
+</html>

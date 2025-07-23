@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方剂</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <div class="theme-toggle">
+      <button id="theme-toggle-btn" class="theme-btn">
+        🌙
+      </button>
+    </div>
+    <div class="compare-toggle">
+      <button id="compare-btn" class="compare-btn">对比</button>
+    </div>
+    <div class="search-container">
+      <button id="search-btn" class="search-btn">🔍</button>
+      <div class="search-expand">
+        <input type="text" id="search-input" placeholder="输入搜索内容..." />
+        <button id="search-submit">搜索</button>
+      </div>
+    </div>
+    <main class="main-flex">
+      <aside id="tree" class="tree-panel"></aside>
+      <section id="detail" class="detail-panel"></section>
+    </main>
+  </body>
+</html> 
